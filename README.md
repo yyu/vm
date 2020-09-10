@@ -234,3 +234,9 @@ menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menu
 [02:12:02]yy@ryzen:~$ cat /proc/cmdline 
 BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash vt.handoff=7 amd_iommu=on iommu=pt
 ```
+
+### modify `/boot/grub/grub.cfg` (should have done it above)
+
+```
+	linux	/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro  quiet splash $vt_handoff amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0
+```
