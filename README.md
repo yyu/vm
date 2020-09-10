@@ -229,3 +229,8 @@ menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menu
 [    0.812614] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
 [    3.082748] AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
 ```
+
+```
+[02:12:02]yy@ryzen:~$ cat /proc/cmdline 
+BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash vt.handoff=7 amd_iommu=on iommu=pt
+```
