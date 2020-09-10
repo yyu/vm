@@ -63,11 +63,11 @@ yy@ryzen:~$ dmesg | grep -i -e DMAR -e IOMMU
 
 ```
 yy@ryzen:~$ for g in /sys/kernel/iommu_groups/*; do
->     echo "IOMMU Group ${g##*/}:"
->     for d in $g/devices/*; do
->         echo -e "\t$(lspci -nns ${d##*/})"
->     done;
-> done;
+     echo "IOMMU Group ${g##*/}:"
+     for d in $g/devices/*; do
+         echo -e "\t$(lspci -nns ${d##*/})"
+     done;
+ done;
 IOMMU Group 0:
 	00:01.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge [1022:1482]
 IOMMU Group 1:
@@ -150,6 +150,8 @@ IOMMU Group 9:
 ```
 
 ### use GT710@PCI_E5 instead of RX580@PCI_E1
+
+[2020-09-10] failed -- it seems the primary GPU cannot be used as pass-through. MSI bios doesn't have an option to change initial GPU.
 
 Refs:
 [1](https://forums.developer.nvidia.com/t/multi-nvidia-gpus-and-xorg-conf-how-to-account-for-pci-bus-busid-change/34556),
@@ -266,7 +268,7 @@ menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menu
 	else
 	  search --no-floppy --fs-uuid --set=root feada7a3-0ea8-461e-a256-3a6d514aefd8
 	fi
-	linux	/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro  quiet splash $vt_handoff amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0
+	linux	/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro  quiet splash $vt_handoff amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
 	initrd	/boot/initrd.img-5.4.0-47-generic
 }
 ```
@@ -275,13 +277,13 @@ menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menu
 
 ```
 [12:41:25]yy@ryzen:~$ cat /proc/cmdline 
-BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pti vfio-pci.ids=1002:67df,1002:aaf0
+BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
 ```
 
 ```
 [12:41:31]yy@ryzen:~$ dmesg | grep -i -e DMAR -e IOMMU
-[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pti vfio-pci.ids=1002:67df,1002:aaf0
-[    0.075602] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pti vfio-pci.ids=1002:67df,1002:aaf0
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
+[    0.075602] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
 [    0.717185] iommu: Default domain type: Passthrough (set via kernel command line)
 [    0.809705] pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
 [    0.809887] pci 0000:00:01.0: Adding to iommu group 0
@@ -338,8 +340,8 @@ BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d
 
 ```
 [12:45:25]yy@ryzen:~$ dmesg | grep -i vfio
-[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pti vfio-pci.ids=1002:67df,1002:aaf0
-[    0.075602] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pti vfio-pci.ids=1002:67df,1002:aaf0
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0
+[    0.075602] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0
 [    0.845062] VFIO - User Level meta-driver version: 0.3
 [    0.845110] vfio-pci 0000:2d:00.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
 [    0.863993] vfio_pci: add [1002:67df[ffffffff:ffffffff]] class 0x000000/00000000
