@@ -478,3 +478,34 @@ Adding user `yy' to group `kvm' ...
 Adding user yy to group kvm
 Done.
 ```
+
+```
+[13:16:20]yy@ryzen:~$ sudo service libvirtd start
+[13:18:02]yy@ryzen:~$ sudo service libvirtd status
+● libvirtd.service - Virtualization daemon
+     Loaded: loaded (/lib/systemd/system/libvirtd.service; enabled; vendor preset: enabled)
+     Active: active (running) since Thu 2020-09-10 12:52:24 PDT; 25min ago
+TriggeredBy: ● libvirtd.socket
+             ● libvirtd-ro.socket
+             ● libvirtd-admin.socket
+       Docs: man:libvirtd(8)
+             https://libvirt.org
+   Main PID: 5294 (libvirtd)
+      Tasks: 19 (limit: 32768)
+     Memory: 24.7M
+     CGroup: /system.slice/libvirtd.service
+             ├─5294 /usr/sbin/libvirtd
+             ├─5429 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+             └─5430 /usr/sbin/dnsmasq --conf-file=/var/lib/libvirt/dnsmasq/default.conf --leasefile-ro --dhcp-script=/usr/lib/libvirt/libvirt_leaseshelper
+
+Sep 10 12:52:24 ryzen systemd[1]: Started Virtualization daemon.
+Sep 10 12:52:24 ryzen dnsmasq[5429]: started, version 2.80 cachesize 150
+Sep 10 12:52:24 ryzen dnsmasq[5429]: compile time options: IPv6 GNU-getopt DBus i18n IDN DHCP DHCPv6 no-Lua TFTP conntrack ipset auth DNSSEC loop-detect inotify dumpfile
+Sep 10 12:52:24 ryzen dnsmasq-dhcp[5429]: DHCP, IP range 192.168.122.2 -- 192.168.122.254, lease time 1h
+Sep 10 12:52:24 ryzen dnsmasq-dhcp[5429]: DHCP, sockets bound exclusively to interface virbr0
+Sep 10 12:52:24 ryzen dnsmasq[5429]: reading /etc/resolv.conf
+Sep 10 12:52:24 ryzen dnsmasq[5429]: using nameserver 127.0.0.53#53
+Sep 10 12:52:24 ryzen dnsmasq[5429]: read /etc/hosts - 7 addresses
+Sep 10 12:52:24 ryzen dnsmasq[5429]: read /var/lib/libvirt/dnsmasq/default.addnhosts - 0 addresses
+Sep 10 12:52:24 ryzen dnsmasq-dhcp[5429]: read /var/lib/libvirt/dnsmasq/default.hostsfile
+```
