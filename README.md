@@ -151,6 +151,10 @@ IOMMU Group 9:
 
 ### use GT710@PCI_E5 instead of RX580@PCI_E1
 
+Refs:
+[1](https://forums.developer.nvidia.com/t/multi-nvidia-gpus-and-xorg-conf-how-to-account-for-pci-bus-busid-change/34556),
+[2](https://stackoverflow.com/questions/18382271/how-can-i-modify-xorg-conf-file-to-force-x-server-to-run-on-a-specific-gpu-i-a)
+
 #### generate xorg config
 ```
 [12:03:50]yy@ryzen:~$ sudo nvidia-xconfig 
@@ -187,6 +191,8 @@ GPU #0:
       Physical Width        : 600 mm
       Physical Height       : 340 mm
 ```
+
+Note: `PCI:36:0:0` is the same as `24:00.0` in the output of `lspci`. The former is decimal and the latter is hex.
 
 ```
 [12:03:50]yy@ryzen:~$ vi /etc/X11/xorg.conf
