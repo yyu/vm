@@ -509,3 +509,16 @@ Sep 10 12:52:24 ryzen dnsmasq[5429]: read /etc/hosts - 7 addresses
 Sep 10 12:52:24 ryzen dnsmasq[5429]: read /var/lib/libvirt/dnsmasq/default.addnhosts - 0 addresses
 Sep 10 12:52:24 ryzen dnsmasq-dhcp[5429]: read /var/lib/libvirt/dnsmasq/default.hostsfile
 ```
+
+For some reason, I have to reboot at this point, otherwise there is an error: `libvirt.libvirtError: Failed to connect socket to '/var/run/libvirt/libvirt-sock': Permission denied`.
+
+After reboot:
+
+```
+[13:24:42]yy@ryzen:~$ groups
+yy adm cdrom sudo dip plugdev kvm lpadmin lxd sambashare libvirt
+```
+
+```
+[13:24:44]yy@ryzen:~$ virt-manager 
+```
