@@ -334,5 +334,15 @@ BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d
 [    0.811390] pci 0000:00:00.2: AMD-Vi: Found IOMMU cap 0x40
 [    0.812045] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
 [    3.091310] AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
+```
 
+```
+[12:45:25]yy@ryzen:~$ dmesg | grep -i vfio
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pti vfio-pci.ids=1002:67df,1002:aaf0
+[    0.075602] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pti vfio-pci.ids=1002:67df,1002:aaf0
+[    0.845062] VFIO - User Level meta-driver version: 0.3
+[    0.845110] vfio-pci 0000:2d:00.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[    0.863993] vfio_pci: add [1002:67df[ffffffff:ffffffff]] class 0x000000/00000000
+[    0.883992] vfio_pci: add [1002:aaf0[ffffffff:ffffffff]] class 0x000000/00000000
+[    3.237319] vfio-pci 0000:2d:00.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
 ```
