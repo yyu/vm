@@ -463,3 +463,18 @@ BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d
 	Kernel driver in use: snd_hda_intel
 	Kernel modules: snd_hda_intel
 ```
+
+### vm preparation
+
+```
+[13:11:03]yy@ryzen:~$ sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients virt-manager bridge-utils
+```
+
+```
+[13:12:20]yy@ryzen:~$ sudo adduser `id -un` libvirt
+The user `yy' is already a member of `libvirt'.
+[13:12:50]yy@ryzen:~$ sudo adduser `id -un` kvm
+Adding user `yy' to group `kvm' ...
+Adding user yy to group kvm
+Done.
+```
