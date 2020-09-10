@@ -522,3 +522,12 @@ yy adm cdrom sudo dip plugdev kvm lpadmin lxd sambashare libvirt
 ```
 [13:24:44]yy@ryzen:~$ virt-manager 
 ```
+
+### vm - win10
+
+```
+[13:58:02]yy@ryzen:~/___/vm$ virsh list --all
+ Id   Name    State
+------------------------
+ -    win10   shut off
+```
