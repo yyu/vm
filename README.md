@@ -531,3 +531,15 @@ yy adm cdrom sudo dip plugdev kvm lpadmin lxd sambashare libvirt
 ------------------------
  -    win10   shut off
 ```
+
+```
+[14:14:45]yy@ryzen:~/___/vm$ virsh edit win10
+[14:15:24]yy@ryzen:~/___/vm$ sudo vi /etc/libvirt/qemu.conf 
+```
+
+```
+[14:23:30]yy@ryzen:~/___/vm$ sudo adduser `id -un` input
+Adding user `yy' to group `input' ...
+Adding user yy to group input
+Done.
+```
