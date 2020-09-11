@@ -1,0 +1,7 @@
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
+[    0.077143] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
+[    0.860222] VFIO - User Level meta-driver version: 0.3
+[    0.860272] vfio-pci 0000:24:00.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=none
+[    0.880047] vfio_pci: add [10de:128b[ffffffff:ffffffff]] class 0x000000/00000000
+[    0.900155] vfio_pci: add [10de:0e0f[ffffffff:ffffffff]] class 0x000000/00000000
+[  366.070308] vfio-pci 0000:24:00.0: enabling device (0000 -> 0003)
