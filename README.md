@@ -281,76 +281,75 @@ BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d
 ```
 
 ```
-[12:41:31]yy@ryzen:~$ dmesg | grep -i -e DMAR -e IOMMU
+[17:09:55]yy@ryzen:~$ dmesg | grep -i -e DMAR -e IOMMU
 [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
-[    0.075602] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
-[    0.717185] iommu: Default domain type: Passthrough (set via kernel command line)
-[    0.809705] pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
-[    0.809887] pci 0000:00:01.0: Adding to iommu group 0
-[    0.809907] pci 0000:00:01.1: Adding to iommu group 1
-[    0.809925] pci 0000:00:01.2: Adding to iommu group 2
-[    0.809939] pci 0000:00:02.0: Adding to iommu group 3
-[    0.809956] pci 0000:00:03.0: Adding to iommu group 4
-[    0.809975] pci 0000:00:03.1: Adding to iommu group 5
-[    0.809990] pci 0000:00:04.0: Adding to iommu group 6
-[    0.810006] pci 0000:00:05.0: Adding to iommu group 7
-[    0.810023] pci 0000:00:07.0: Adding to iommu group 8
-[    0.810039] pci 0000:00:07.1: Adding to iommu group 9
-[    0.810057] pci 0000:00:08.0: Adding to iommu group 10
-[    0.810074] pci 0000:00:08.1: Adding to iommu group 11
-[    0.810091] pci 0000:00:14.0: Adding to iommu group 12
-[    0.810102] pci 0000:00:14.3: Adding to iommu group 12
-[    0.810136] pci 0000:00:18.0: Adding to iommu group 13
-[    0.810147] pci 0000:00:18.1: Adding to iommu group 13
-[    0.810158] pci 0000:00:18.2: Adding to iommu group 13
-[    0.810170] pci 0000:00:18.3: Adding to iommu group 13
-[    0.810183] pci 0000:00:18.4: Adding to iommu group 13
-[    0.810194] pci 0000:00:18.5: Adding to iommu group 13
-[    0.810205] pci 0000:00:18.6: Adding to iommu group 13
-[    0.810216] pci 0000:00:18.7: Adding to iommu group 13
-[    0.810236] pci 0000:01:00.0: Adding to iommu group 14
-[    0.810257] pci 0000:20:00.0: Adding to iommu group 15
-[    0.810330] pci 0000:21:02.0: Adding to iommu group 16
-[    0.810400] pci 0000:21:04.0: Adding to iommu group 17
-[    0.810471] pci 0000:21:05.0: Adding to iommu group 18
-[    0.810542] pci 0000:21:06.0: Adding to iommu group 19
-[    0.810571] pci 0000:21:08.0: Adding to iommu group 20
-[    0.810600] pci 0000:21:09.0: Adding to iommu group 21
-[    0.810629] pci 0000:21:0a.0: Adding to iommu group 22
-[    0.810698] pci 0000:24:00.0: Adding to iommu group 23
-[    0.810758] pci 0000:24:00.1: Adding to iommu group 23
-[    0.810815] pci 0000:26:00.0: Adding to iommu group 24
-[    0.810882] pci 0000:27:00.0: Adding to iommu group 25
-[    0.810940] pci 0000:28:00.0: Adding to iommu group 26
-[    0.810963] pci 0000:2a:00.0: Adding to iommu group 20
-[    0.810988] pci 0000:2a:00.1: Adding to iommu group 20
-[    0.811005] pci 0000:2a:00.3: Adding to iommu group 20
-[    0.811026] pci 0000:2b:00.0: Adding to iommu group 21
-[    0.811047] pci 0000:2c:00.0: Adding to iommu group 22
-[    0.811091] pci 0000:2d:00.0: Adding to iommu group 27
-[    0.811120] pci 0000:2d:00.1: Adding to iommu group 27
-[    0.811138] pci 0000:2e:00.0: Adding to iommu group 28
-[    0.811160] pci 0000:2f:00.0: Adding to iommu group 29
-[    0.811180] pci 0000:2f:00.3: Adding to iommu group 30
-[    0.811200] pci 0000:2f:00.4: Adding to iommu group 31
-[    0.811390] pci 0000:00:00.2: AMD-Vi: Found IOMMU cap 0x40
-[    0.812045] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
-[    3.091310] AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
+[    0.077143] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
+[    0.718807] iommu: Default domain type: Passthrough (set via kernel command line)
+[    0.817035] pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
+[    0.817210] pci 0000:00:01.0: Adding to iommu group 0
+[    0.817229] pci 0000:00:01.1: Adding to iommu group 1
+[    0.817248] pci 0000:00:01.2: Adding to iommu group 2
+[    0.817262] pci 0000:00:02.0: Adding to iommu group 3
+[    0.817280] pci 0000:00:03.0: Adding to iommu group 4
+[    0.817298] pci 0000:00:03.1: Adding to iommu group 5
+[    0.817312] pci 0000:00:04.0: Adding to iommu group 6
+[    0.817326] pci 0000:00:05.0: Adding to iommu group 7
+[    0.817343] pci 0000:00:07.0: Adding to iommu group 8
+[    0.817360] pci 0000:00:07.1: Adding to iommu group 9
+[    0.817380] pci 0000:00:08.0: Adding to iommu group 10
+[    0.817397] pci 0000:00:08.1: Adding to iommu group 11
+[    0.817413] pci 0000:00:14.0: Adding to iommu group 12
+[    0.817424] pci 0000:00:14.3: Adding to iommu group 12
+[    0.817457] pci 0000:00:18.0: Adding to iommu group 13
+[    0.817469] pci 0000:00:18.1: Adding to iommu group 13
+[    0.817482] pci 0000:00:18.2: Adding to iommu group 13
+[    0.817493] pci 0000:00:18.3: Adding to iommu group 13
+[    0.817504] pci 0000:00:18.4: Adding to iommu group 13
+[    0.817515] pci 0000:00:18.5: Adding to iommu group 13
+[    0.817528] pci 0000:00:18.6: Adding to iommu group 13
+[    0.817539] pci 0000:00:18.7: Adding to iommu group 13
+[    0.817558] pci 0000:01:00.0: Adding to iommu group 14
+[    0.817582] pci 0000:20:00.0: Adding to iommu group 15
+[    0.817654] pci 0000:21:02.0: Adding to iommu group 16
+[    0.817725] pci 0000:21:04.0: Adding to iommu group 17
+[    0.817796] pci 0000:21:05.0: Adding to iommu group 18
+[    0.817866] pci 0000:21:06.0: Adding to iommu group 19
+[    0.817897] pci 0000:21:08.0: Adding to iommu group 20
+[    0.817926] pci 0000:21:09.0: Adding to iommu group 21
+[    0.817954] pci 0000:21:0a.0: Adding to iommu group 22
+[    0.818027] pci 0000:24:00.0: Adding to iommu group 23
+[    0.818086] pci 0000:24:00.1: Adding to iommu group 23
+[    0.818144] pci 0000:26:00.0: Adding to iommu group 24
+[    0.818211] pci 0000:27:00.0: Adding to iommu group 25
+[    0.818268] pci 0000:28:00.0: Adding to iommu group 26
+[    0.818290] pci 0000:2a:00.0: Adding to iommu group 20
+[    0.818316] pci 0000:2a:00.1: Adding to iommu group 20
+[    0.818331] pci 0000:2a:00.3: Adding to iommu group 20
+[    0.818352] pci 0000:2b:00.0: Adding to iommu group 21
+[    0.818373] pci 0000:2c:00.0: Adding to iommu group 22
+[    0.818417] pci 0000:2d:00.0: Adding to iommu group 27
+[    0.818445] pci 0000:2d:00.1: Adding to iommu group 27
+[    0.818463] pci 0000:2e:00.0: Adding to iommu group 28
+[    0.818486] pci 0000:2f:00.0: Adding to iommu group 29
+[    0.818505] pci 0000:2f:00.3: Adding to iommu group 30
+[    0.818525] pci 0000:2f:00.4: Adding to iommu group 31
+[    0.818713] pci 0000:00:00.2: AMD-Vi: Found IOMMU cap 0x40
+[    0.819310] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
+[    3.120133] AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
 ```
 
 ```
-[12:45:25]yy@ryzen:~$ dmesg | grep -i vfio
-[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0
-[    0.075602] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0
-[    0.845062] VFIO - User Level meta-driver version: 0.3
-[    0.845110] vfio-pci 0000:2d:00.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
-[    0.863993] vfio_pci: add [1002:67df[ffffffff:ffffffff]] class 0x000000/00000000
-[    0.883992] vfio_pci: add [1002:aaf0[ffffffff:ffffffff]] class 0x000000/00000000
-[    3.237319] vfio-pci 0000:2d:00.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=io+mem
+[17:10:47]yy@ryzen:~$ dmesg | grep -i vfio
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
+[    0.077143] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
+[    0.860222] VFIO - User Level meta-driver version: 0.3
+[    0.860272] vfio-pci 0000:24:00.0: vgaarb: changed VGA decodes: olddecodes=io+mem,decodes=io+mem:owns=none
+[    0.880047] vfio_pci: add [10de:128b[ffffffff:ffffffff]] class 0x000000/00000000
+[    0.900155] vfio_pci: add [10de:0e0f[ffffffff:ffffffff]] class 0x000000/00000000
 ```
 
 ```
-[12:46:27]yy@ryzen:~$ lspci -nnk
+[17:11:17]yy@ryzen:~$ lspci -nnk
 00:00.0 Host bridge [0600]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex [1022:1480]
 	Subsystem: Micro-Star International Co., Ltd. [MSI] Starship/Matisse Root Complex [1462:7c35]
 00:00.2 IOMMU [0806]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse IOMMU [1022:1481]
@@ -410,11 +409,11 @@ BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d
 	Kernel driver in use: pcieport
 24:00.0 VGA compatible controller [0300]: NVIDIA Corporation GK208B [GeForce GT 710] [10de:128b] (rev a1)
 	Subsystem: eVga.com. Corp. GK208B [GeForce GT 710] [3842:2717]
-	Kernel driver in use: nvidia
+	Kernel driver in use: vfio-pci
 	Kernel modules: nvidiafb, nouveau, nvidia_drm, nvidia
 24:00.1 Audio device [0403]: NVIDIA Corporation GK208 HDMI/DP Audio Controller [10de:0e0f] (rev a1)
 	Subsystem: eVga.com. Corp. GK208 HDMI/DP Audio Controller [3842:2717]
-	Kernel driver in use: snd_hda_intel
+	Kernel driver in use: vfio-pci
 	Kernel modules: snd_hda_intel
 26:00.0 Ethernet controller [0200]: Intel Corporation I211 Gigabit Network Connection [8086:1539] (rev 03)
 	Subsystem: Micro-Star International Co., Ltd. [MSI] I211 Gigabit Network Connection [1462:7c35]
@@ -447,11 +446,11 @@ BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d
 	Kernel modules: ahci
 2d:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Ellesmere [Radeon RX 470/480/570/570X/580/580X/590] [1002:67df] (rev e7)
 	Subsystem: Sapphire Technology Limited Radeon RX 570 Pulse 4GB [1da2:e353]
-	Kernel driver in use: vfio-pci
+	Kernel driver in use: amdgpu
 	Kernel modules: amdgpu
 2d:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Ellesmere HDMI Audio [Radeon RX 470/480 / 570/580/590] [1002:aaf0]
 	Subsystem: Sapphire Technology Limited Ellesmere HDMI Audio [Radeon RX 470/480 / 570/580/590] [1da2:aaf0]
-	Kernel driver in use: vfio-pci
+	Kernel driver in use: snd_hda_intel
 	Kernel modules: snd_hda_intel
 2e:00.0 Non-Essential Instrumentation [1300]: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Function [1022:148a]
 	Subsystem: Micro-Star International Co., Ltd. [MSI] Starship/Matisse PCIe Dummy Function [1462:7c35]
