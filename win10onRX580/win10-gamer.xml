@@ -13,9 +13,9 @@ or other application using the libvirt API.
       <libosinfo:os id="http://microsoft.com/win/10"/>
     </libosinfo:libosinfo>
   </metadata>
-  <memory unit='KiB'>8388608</memory>
-  <currentMemory unit='KiB'>8388608</currentMemory>
-  <vcpu placement='static'>8</vcpu>
+  <memory unit='KiB'>16777216</memory>
+  <currentMemory unit='KiB'>16777216</currentMemory>
+  <vcpu placement='static'>16</vcpu>
   <os>
     <type arch='x86_64' machine='pc-q35-4.2'>hvm</type>
     <loader readonly='yes' type='pflash'>/usr/share/OVMF/OVMF_CODE.fd</loader>
@@ -32,7 +32,9 @@ or other application using the libvirt API.
     </hyperv>
     <vmport state='off'/>
   </features>
-  <cpu mode='host-model' check='partial'/>
+  <cpu mode='host-model' check='partial'>
+    <topology sockets='1' cores='8' threads='2'/>
+  </cpu>
   <clock offset='localtime'>
     <timer name='rtc' tickpolicy='catchup'/>
     <timer name='pit' tickpolicy='delay'/>
@@ -149,7 +151,7 @@ or other application using the libvirt API.
       <source>
         <vendor id='0x046d'/>
         <product id='0xc52b'/>
-        <address bus='1' device='6'/>
+        <address bus='1' device='5'/>
       </source>
       <address type='usb' bus='0' port='2'/>
     </hostdev>
