@@ -544,3 +544,16 @@ Adding user `yy' to group `input' ...
 Adding user yy to group input
 Done.
 ```
+
+Let kvm hide itself so that nvidia driver is happy.
+
+```
+<domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
+  <name>win10-gamer</name>
+...
+  <qemu:commandline>
+    <qemu:arg value='-cpu'/>
+    <qemu:arg value='host,kvm=off,hv_relaxed,hv_spinlocks=0x1fff,hv_vapic,hv_time,hv_vendor_id=whatever'/>
+  </qemu:commandline>
+</domain>
+```
