@@ -526,6 +526,9 @@ yy adm cdrom sudo dip plugdev kvm lpadmin lxd sambashare libvirt
 
 ### vm - win10
 
+[Windows VirtIO drivers](https://docs.fedoraproject.org/en-US/quick-docs/creating-windows-virtual-machines-using-virtio-drivers/index.html)
+
+
 ```
 [13:58:02]yy@ryzen:~/___/vm$ virsh list --all
  Id   Name    State
