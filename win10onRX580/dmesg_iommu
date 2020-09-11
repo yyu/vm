@@ -1,0 +1,54 @@
+[    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0
+[    0.076788] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0
+[    0.717588] iommu: Default domain type: Passthrough (set via kernel command line)
+[    0.816235] pci 0000:00:00.2: AMD-Vi: IOMMU performance counters supported
+[    0.816413] pci 0000:00:01.0: Adding to iommu group 0
+[    0.816432] pci 0000:00:01.1: Adding to iommu group 1
+[    0.816451] pci 0000:00:01.2: Adding to iommu group 2
+[    0.816466] pci 0000:00:02.0: Adding to iommu group 3
+[    0.816486] pci 0000:00:03.0: Adding to iommu group 4
+[    0.816505] pci 0000:00:03.1: Adding to iommu group 5
+[    0.816524] pci 0000:00:03.2: Adding to iommu group 6
+[    0.816538] pci 0000:00:04.0: Adding to iommu group 7
+[    0.816552] pci 0000:00:05.0: Adding to iommu group 8
+[    0.816569] pci 0000:00:07.0: Adding to iommu group 9
+[    0.816586] pci 0000:00:07.1: Adding to iommu group 10
+[    0.816604] pci 0000:00:08.0: Adding to iommu group 11
+[    0.816621] pci 0000:00:08.1: Adding to iommu group 12
+[    0.816638] pci 0000:00:14.0: Adding to iommu group 13
+[    0.816650] pci 0000:00:14.3: Adding to iommu group 13
+[    0.816682] pci 0000:00:18.0: Adding to iommu group 14
+[    0.816693] pci 0000:00:18.1: Adding to iommu group 14
+[    0.816704] pci 0000:00:18.2: Adding to iommu group 14
+[    0.816716] pci 0000:00:18.3: Adding to iommu group 14
+[    0.816727] pci 0000:00:18.4: Adding to iommu group 14
+[    0.816739] pci 0000:00:18.5: Adding to iommu group 14
+[    0.816750] pci 0000:00:18.6: Adding to iommu group 14
+[    0.816762] pci 0000:00:18.7: Adding to iommu group 14
+[    0.816781] pci 0000:01:00.0: Adding to iommu group 15
+[    0.816803] pci 0000:20:00.0: Adding to iommu group 16
+[    0.816875] pci 0000:21:04.0: Adding to iommu group 17
+[    0.816947] pci 0000:21:05.0: Adding to iommu group 18
+[    0.817018] pci 0000:21:06.0: Adding to iommu group 19
+[    0.817047] pci 0000:21:08.0: Adding to iommu group 20
+[    0.817076] pci 0000:21:09.0: Adding to iommu group 21
+[    0.817104] pci 0000:21:0a.0: Adding to iommu group 22
+[    0.817162] pci 0000:26:00.0: Adding to iommu group 23
+[    0.817229] pci 0000:27:00.0: Adding to iommu group 24
+[    0.817286] pci 0000:28:00.0: Adding to iommu group 25
+[    0.817307] pci 0000:2a:00.0: Adding to iommu group 20
+[    0.817333] pci 0000:2a:00.1: Adding to iommu group 20
+[    0.817348] pci 0000:2a:00.3: Adding to iommu group 20
+[    0.817369] pci 0000:2b:00.0: Adding to iommu group 21
+[    0.817390] pci 0000:2c:00.0: Adding to iommu group 22
+[    0.817416] pci 0000:2d:00.0: Adding to iommu group 26
+[    0.817434] pci 0000:2d:00.1: Adding to iommu group 26
+[    0.817493] pci 0000:2e:00.0: Adding to iommu group 27
+[    0.817527] pci 0000:2e:00.1: Adding to iommu group 27
+[    0.817547] pci 0000:2f:00.0: Adding to iommu group 28
+[    0.817573] pci 0000:30:00.0: Adding to iommu group 29
+[    0.817592] pci 0000:30:00.3: Adding to iommu group 30
+[    0.817612] pci 0000:30:00.4: Adding to iommu group 31
+[    0.817815] pci 0000:00:00.2: AMD-Vi: Found IOMMU cap 0x40
+[    0.818434] perf/amd_iommu: Detected AMD IOMMU #0 (2 banks, 4 counters/bank).
+[    3.527534] AMD-Vi: AMD IOMMUv2 driver by Joerg Roedel <jroedel@suse.de>
