@@ -276,7 +276,7 @@ menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menu
 ### reboot
 
 ```
-[12:41:25]yy@ryzen:~$ cat /proc/cmdline 
+[17:00:57]yy@ryzen:~$ cat /proc/cmdline 
 BOOT_IMAGE=/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
 ```
 
