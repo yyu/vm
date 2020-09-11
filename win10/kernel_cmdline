@@ -1,0 +1,1 @@
+linux /boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash $vt_handoff amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
