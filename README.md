@@ -707,3 +707,13 @@ qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.01H:E
 qemu-system-x86_64: warning: host doesn't support requested feature: CPUID.01H:ECX.pcid [bit 17]
 ```
 
+#### post-install
+
+```
+[20:38:17]yy@ryzen:~/___/src/vm/macosCatalina(master)$ virt-xml-validate macos.xml 
+macos.xml validates
+[20:38:44]yy@ryzen:~/___/src/vm/macosCatalina(master)$ virsh --connect qemu:///system define macos.xml
+Domain macos defined from macos.xml
+```
+
+Then use it in `virt-manager`.
