@@ -575,6 +575,10 @@ sudo apt-get install qemu uml-utilities virt-manager git wget libguestfs-tools
 
 #### networking option 1
 
+Manual execution of the following commands is only needed before installation.
+
+After installation finishes, `macos.xml` starts to be used, we no longer need these. (If we run them, vm will fail to start)
+
 ```
 sudo ip tuntap add dev tap0 mode tap
 sudo ip link set tap0 up promisc on
