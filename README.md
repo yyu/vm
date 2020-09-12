@@ -576,10 +576,10 @@ sudo apt-get install qemu uml-utilities virt-manager git wget libguestfs-tools
 #### networking option 1
 
 ```
-[19:35:54]yy@ryzen:~$ sudo ip tuntap add dev tap0 mode tap
-[19:35:59]yy@ryzen:~$ sudo ip link set tap0 up promisc on
-[19:35:59]yy@ryzen:~$ sudo ip link set dev virbr0 up
-[19:35:59]yy@ryzen:~$ sudo ip link set dev tap0 master virbr0
+sudo ip tuntap add dev tap0 mode tap
+sudo ip link set tap0 up promisc on
+sudo ip link set dev virbr0 up
+sudo ip link set dev tap0 master virbr0
 ```
 #### networking option 2 (easy, not as fast; didn't try)
 
