@@ -120,12 +120,6 @@ or other application using the libvirt API.
       <target chassis='7' port='0xe'/>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x01' function='0x6'/>
     </controller>
-    <interface type='network'>
-      <mac address='52:54:00:09:e0:9f'/>
-      <source network='default'/>
-      <model type='virtio'/>
-      <address type='pci' domain='0x0000' bus='0x01' slot='0x00' function='0x0'/>
-    </interface>
     <input type='mouse' bus='ps2'/>
     <input type='keyboard' bus='ps2'/>
     <hostdev mode='subsystem' type='usb' managed='yes'>
@@ -147,11 +141,16 @@ or other application using the libvirt API.
       </source>
       <address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0'/>
     </hostdev>
+    <hostdev mode='subsystem' type='pci' managed='yes'>
+      <source>
+        <address domain='0x0000' bus='0x26' slot='0x00' function='0x0'/>
+      </source>
+      <address type='pci' domain='0x0000' bus='0x07' slot='0x00' function='0x0'/>
+    </hostdev>
     <hostdev mode='subsystem' type='usb' managed='yes'>
       <source>
-        <vendor id='0x046d'/>
-        <product id='0xc52b'/>
-        <address bus='1' device='5'/>
+        <vendor id='0x093a'/>
+        <product id='0x2521'/>
       </source>
       <address type='usb' bus='0' port='2'/>
     </hostdev>
