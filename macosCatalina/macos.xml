@@ -116,11 +116,12 @@ or other application using the libvirt API.
       <master startport='4'/>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x07' function='0x2'/>
     </controller>
-    <interface type='network'>
-      <mac address='52:54:00:10:3b:db'/>
-      <source network='default'/>
-      <model type='e1000e'/>
-      <address type='pci' domain='0x0000' bus='0x06' slot='0x00' function='0x0'/>
+    <interface type='bridge'>
+      <mac address='52:54:00:c9:18:27'/>
+      <source bridge='virbr0'/>
+      <target dev='tap0'/>
+      <model type='vmxnet3'/>
+      <address type='pci' domain='0x0000' bus='0x09' slot='0x01' function='0x0'/>
     </interface>
     <input type='tablet' bus='usb'>
       <address type='usb' bus='0' port='1'/>
@@ -130,12 +131,6 @@ or other application using the libvirt API.
       <address type='usb' bus='0' port='3'/>
     </input>
     <input type='keyboard' bus='ps2'/>
-    <hostdev mode='subsystem' type='pci' managed='yes'>
-      <source>
-        <address domain='0x0000' bus='0x26' slot='0x00' function='0x0'/>
-      </source>
-      <address type='pci' domain='0x0000' bus='0x03' slot='0x00' function='0x0'/>
-    </hostdev>
     <hostdev mode='subsystem' type='pci' managed='yes'>
       <source>
         <address domain='0x0000' bus='0x2e' slot='0x00' function='0x0'/>
@@ -161,12 +156,6 @@ or other application using the libvirt API.
         <product id='0x2521'/>
       </source>
       <address type='usb' bus='0' port='4'/>
-    </hostdev>
-    <hostdev mode='subsystem' type='pci' managed='yes'>
-      <source>
-        <address domain='0x0000' bus='0x28' slot='0x00' function='0x0'/>
-      </source>
-      <address type='pci' domain='0x0000' bus='0x07' slot='0x00' function='0x0'/>
     </hostdev>
     <memballoon model='none'/>
   </devices>
