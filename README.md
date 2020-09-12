@@ -583,15 +583,15 @@ sudo apt-get install qemu uml-utilities virt-manager git wget libguestfs-tools
 ```
 #### networking option 2 (easy, not as fast; didn't try)
 
-per [this link](https://github.com/kholia/OSX-KVM/blob/master/networking-qemu-kvm-howto.txt),
-simply replace `  -netdev tap,id=net0,ifname=tap0,script=no,downscript=no -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:c9:18:27` with either
+per [this link](https://github.com/kholia/OSX-KVM/blob/master/networking-qemu-kvm-howto.txt), simply replace
+`-netdev tap,id=net0,ifname=tap0,script=no,downscript=no -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:c9:18:27`
+from the installation script below with either
 ```
 -netdev user,id=net0 -device e1000-82545em,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
 ```
 or
 ```
 -netdev user,id=net0 -device vmxnet3,netdev=net0,id=net0,mac=52:54:00:c9:18:27 \
-
 ```
 
 #### hard drive
@@ -616,16 +616,8 @@ Y
 
 ```
 [20:03:46]yy@ryzen:~/___/src/OSX-KVM(master)$ git diff ./fetch-macOS.py 
-diff --git a/fetch-macOS.py b/fetch-macOS.py
-index a3f0c60..9ef490f 100755
---- a/fetch-macOS.py
-+++ b/fetch-macOS.py
-@@ -1,4 +1,4 @@
 -#!/usr/bin/env python
 +#!/usr/bin/env python3
- # encoding: utf-8
- #
- # https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py
 [20:04:04]yy@ryzen:~/___/src/OSX-KVM(master)$ ./fetch-macOS.py
 ...
 #    ProductID    Version    Build   Post Date  Title
@@ -641,10 +633,8 @@ Choose a product to download (1-11): 11
 
 #### installation script
 
-```
-[19:59:03]yy@ryzen:~/___/src/OSX-KVM(master)$ vimcat OpenCore-Boot.sh
-```
 ```bash
+[19:59:03]yy@ryzen:~/___/src/OSX-KVM(master)$ vimcat OpenCore-Boot.sh
 #!/usr/bin/env bash
 
 # Special thanks to:
