@@ -23,7 +23,7 @@ or other application using the libvirt API.
     <apic/>
   </features>
   <cpu mode='custom' match='exact' check='none'>
-    <model fallback='forbid'>qemu64</model>
+    <model fallback='forbid'>Penryn</model>
     <topology sockets='1' cores='8' threads='2'/>
   </cpu>
   <clock offset='utc'>
@@ -156,6 +156,20 @@ or other application using the libvirt API.
         <product id='0x2521'/>
       </source>
       <address type='usb' bus='0' port='4'/>
+    </hostdev>
+    <hostdev mode='subsystem' type='pci' managed='yes'>
+      <source>
+        <address domain='0x0000' bus='0x26' slot='0x00' function='0x0'/>
+      </source>
+      <address type='pci' domain='0x0000' bus='0x03' slot='0x00' function='0x0'/>
+    </hostdev>
+    <hostdev mode='subsystem' type='usb' managed='yes'>
+      <source>
+        <vendor id='0x046d'/>
+        <product id='0xc52b'/>
+        <address bus='1' device='7'/>
+      </source>
+      <address type='usb' bus='0' port='5'/>
     </hostdev>
     <memballoon model='none'/>
   </devices>
