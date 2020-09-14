@@ -252,7 +252,21 @@ Section "Screen"
 EndSection
 ```
 
-### modify `/boot/grub/grub.cfg`
+### modify grub
+
+#### the elegant way - modify `/etc/default/grub`
+
+```
+$ sudo vi /etc/default/grub
+...
+GRUB_CMDLINE_LINUX="amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0,8086:1539"
+...
+```
+```
+$ sudo update-grub
+```
+
+#### the brutal way - modify `/boot/grub/grub.cfg`
 
 ```
 menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-simple-feada7a3-0ea8-461e-a256-3a6d514aefd8' {
@@ -268,7 +282,7 @@ menuentry 'Ubuntu' --class ubuntu --class gnu-linux --class gnu --class os $menu
 	else
 	  search --no-floppy --fs-uuid --set=root feada7a3-0ea8-461e-a256-3a6d514aefd8
 	fi
-	linux	/boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro  quiet splash $vt_handoff amd_iommu=on iommu=pt vfio-pci.ids=10de:128b,10de:0e0f
+	linux /boot/vmlinuz-5.4.0-47-generic root=UUID=feada7a3-0ea8-461e-a256-3a6d514aefd8 ro quiet splash $vt_handoff amd_iommu=on iommu=pt vfio-pci.ids=1002:67df,1002:aaf0,8086:1539
 	initrd	/boot/initrd.img-5.4.0-47-generic
 }
 ```
