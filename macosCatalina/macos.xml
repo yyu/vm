@@ -7,7 +7,7 @@ or other application using the libvirt API.
 
 <domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
   <name>macos</name>
-  <uuid>0ce3d2ee-f4a9-11ea-953a-3f39b4361c3d</uuid>
+  <uuid>b57bd412-1835-490e-b18a-95019212b70d</uuid>
   <title>macos</title>
   <memory unit='KiB'>16777216</memory>
   <currentMemory unit='KiB'>16777216</currentMemory>
@@ -40,14 +40,14 @@ or other application using the libvirt API.
       <driver name='qemu' type='qcow2' cache='writeback' io='threads'/>
       <source file='/home/yy/___/vm/mac.img'/>
       <target dev='sdb' bus='sata'/>
-      <boot order='1'/>
+      <boot order='2'/>
       <address type='drive' controller='0' bus='0' target='0' unit='1'/>
     </disk>
     <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2'/>
       <source file='/home/yy/___/vm/OpenCore.qcow2'/>
       <target dev='sdc' bus='sata'/>
-      <boot order='2'/>
+      <boot order='1'/>
       <address type='drive' controller='0' bus='0' target='0' unit='2'/>
     </disk>
     <controller type='sata' index='0'>
@@ -116,13 +116,6 @@ or other application using the libvirt API.
       <master startport='4'/>
       <address type='pci' domain='0x0000' bus='0x00' slot='0x07' function='0x2'/>
     </controller>
-    <interface type='bridge'>
-      <mac address='52:54:00:c9:18:27'/>
-      <source bridge='virbr0'/>
-      <target dev='tap0'/>
-      <model type='vmxnet3'/>
-      <address type='pci' domain='0x0000' bus='0x09' slot='0x01' function='0x0'/>
-    </interface>
     <input type='tablet' bus='usb'>
       <address type='usb' bus='0' port='1'/>
     </input>
@@ -143,33 +136,17 @@ or other application using the libvirt API.
       </source>
       <address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0'/>
     </hostdev>
-    <hostdev mode='subsystem' type='usb' managed='yes'>
-      <source>
-        <vendor id='0x05ac'/>
-        <product id='0x024f'/>
-      </source>
-      <address type='usb' bus='0' port='2'/>
-    </hostdev>
-    <hostdev mode='subsystem' type='usb' managed='yes'>
-      <source>
-        <vendor id='0x093a'/>
-        <product id='0x2521'/>
-      </source>
-      <address type='usb' bus='0' port='4'/>
-    </hostdev>
     <hostdev mode='subsystem' type='pci' managed='yes'>
       <source>
         <address domain='0x0000' bus='0x26' slot='0x00' function='0x0'/>
       </source>
       <address type='pci' domain='0x0000' bus='0x03' slot='0x00' function='0x0'/>
     </hostdev>
-    <hostdev mode='subsystem' type='usb' managed='yes'>
+    <hostdev mode='subsystem' type='pci' managed='yes'>
       <source>
-        <vendor id='0x046d'/>
-        <product id='0xc52b'/>
-        <address bus='1' device='7'/>
+        <address domain='0x0000' bus='0x25' slot='0x00' function='0x0'/>
       </source>
-      <address type='usb' bus='0' port='5'/>
+      <address type='pci' domain='0x0000' bus='0x06' slot='0x00' function='0x0'/>
     </hostdev>
     <memballoon model='none'/>
   </devices>
