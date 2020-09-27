@@ -736,3 +736,24 @@ Domain macos defined from macos.xml
 
 Then use it in `virt-manager`.
 
+#### macos.xml
+
+These seem to be important:
+
+In the beginning:
+`<domain`**`xmlns:qemu="http://libvirt.org/schemas/domain/qemu/1.0"`**`type="kvm">`
+
+At the end:
+```
+  <qemu:commandline>
+    <qemu:arg value="-device"/>
+    <qemu:arg value="isa-applesmc,osk=ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"/>
+    <qemu:arg value="-smbios"/>
+    <qemu:arg value="type=2"/>
+    <qemu:arg value="-device"/>
+    <qemu:arg value="vmware-svga"/>
+    <qemu:arg value="-cpu"/>
+    <qemu:arg value="Penryn,kvm=on,vendor=GenuineIntel,+invtsc,vmware-cpuid-freq=on,+pcid,+ssse3,+sse4.2,+popcnt,+avx,+aes,+xsave,+xsaveopt,check"/>
+  </qemu:commandline>
+</domain>
+```
