@@ -1,0 +1,73 @@
+[    0.734372] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+[    0.786061] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+[    0.929265] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input4
+[    0.948996] input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+[    1.689475] input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:07.7/usb1/1-1/1-1:1.0/0003:0627:0001.0001/input/input5
+[    1.689646] hid-generic 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Mouse [QEMU QEMU USB Tablet] on usb-0000:00:07.7-1/input0
+[    1.689784] input: Logitech USB Receiver as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.0/0003:046D:C52B.0002/input/input6
+[    1.749880] hid-generic 0003:046D:C52B.0002: input,hidraw1: USB HID v1.11 Keyboard [Logitech USB Receiver] on usb-0000:07:00.0-3.1/input0
+[    1.750103] input: Logitech USB Receiver Mouse as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.1/0003:046D:C52B.0003/input/input7
+[    1.750306] input: Logitech USB Receiver Consumer Control as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.1/0003:046D:C52B.0003/input/input8
+[    1.809854] input: Logitech USB Receiver System Control as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.1/0003:046D:C52B.0003/input/input9
+[    1.810040] hid-generic 0003:046D:C52B.0003: input,hiddev0,hidraw2: USB HID v1.11 Mouse [Logitech USB Receiver] on usb-0000:07:00.0-3.1/input1
+[    1.810282] hid-generic 0003:046D:C52B.0004: hiddev1,hidraw3: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:07:00.0-3.1/input2
+[    1.833138] input: QEMU QEMU USB Keyboard as /devices/pci0000:00/0000:00:07.7/usb1/1-3/1-3:1.0/0003:0627:0001.0005/input/input11
+[    1.869492] logitech-djreceiver 0003:046D:C52B.0008: hiddev2,hidraw4: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:07:00.0-3.4/input2
+[    1.945886] hid-generic 0003:0627:0001.0005: input,hidraw1: USB HID v1.11 Keyboard [QEMU QEMU USB Keyboard] on usb-0000:00:07.7-3/input0
+[    1.987855] input: Logitech Unifying Device. Wireless PID:4051 Mouse as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.4/5-3.4:1.2/0003:046D:C52B.0008/0003:046D:4051.0009/input/input12
+[    2.013912] hid-generic 0003:046D:4051.0009: input,hidraw5: USB HID v1.11 Mouse [Logitech Unifying Device. Wireless PID:4051] on usb-0000:07:00.0-3.4/input2:1
+[    2.014167] input: Logitech Unifying Device. Wireless PID:400f Keyboard as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.4/5-3.4:1.2/0003:046D:C52B.0008/0003:046D:400F.000A/input/input16
+[    2.057865] input: Logitech Unifying Device. Wireless PID:400f Consumer Control as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.4/5-3.4:1.2/0003:046D:C52B.0008/0003:046D:400F.000A/input/input17
+[    2.089866] hid-generic 0003:046D:400F.000A: input,hidraw6: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:400f] on usb-0000:07:00.0-3.4/input2:2
+[    2.090301] logitech-djreceiver 0003:046D:C52B.0004: hiddev0,hidraw2: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:07:00.0-3.1/input2
+[    2.212172] input: Logitech Unifying Device. Wireless PID:4026 Keyboard as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:4026.000B/input/input21
+[    2.212460] input: Logitech Unifying Device. Wireless PID:4026 Mouse as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:4026.000B/input/input22
+[    2.212786] input: Logitech Unifying Device. Wireless PID:4026 Consumer Control as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:4026.000B/input/input23
+[    2.212929] hid-generic 0003:046D:4026.000B: input,hidraw3: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:4026] on usb-0000:07:00.0-3.1/input2:1
+[    2.213955] input: Logitech Unifying Device. Wireless PID:4004 Keyboard as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:4004.000C/input/input27
+[    2.214079] input: Logitech Unifying Device. Wireless PID:4004 Consumer Control as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:4004.000C/input/input28
+[    2.214150] input: Logitech Unifying Device. Wireless PID:4004 System Control as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:4004.000C/input/input29
+[    2.214225] hid-generic 0003:046D:4004.000C: input,hidraw7: USB HID v1.11 Keyboard [Logitech Unifying Device. Wireless PID:4004] on usb-0000:07:00.0-3.1/input2:2
+[    2.215803] input: Logitech Unifying Device. Wireless PID:400a Mouse as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:400A.000D/input/input33
+[    2.215947] hid-generic 0003:046D:400A.000D: input,hidraw8: USB HID v1.11 Mouse [Logitech Unifying Device. Wireless PID:400a] on usb-0000:07:00.0-3.1/input2:3
+[    2.263689] input: Logitech M510 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.4/5-3.4:1.2/0003:046D:C52B.0008/0003:046D:4051.0009/input/input37
+[    2.263851] logitech-hidpp-device 0003:046D:4051.0009: input,hidraw5: USB HID v1.11 Mouse [Logitech M510] on usb-0000:07:00.0-3.4/input2:1
+[    2.351763] input: Logitech K750 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.4/5-3.4:1.2/0003:046D:C52B.0008/0003:046D:400F.000A/input/input38
+[    2.351883] logitech-hidpp-device 0003:046D:400F.000A: input,hidraw6: USB HID v1.11 Keyboard [Logitech K750] on usb-0000:07:00.0-3.4/input2:2
+[    2.471926] input: Logitech T400 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:4026.000B/input/input39
+[    2.472097] logitech-hidpp-device 0003:046D:4026.000B: input,hidraw3: USB HID v1.11 Keyboard [Logitech T400] on usb-0000:07:00.0-3.1/input2:1
+[    2.599782] input: Logitech K360 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:4004.000C/input/input40
+[    2.599907] logitech-hidpp-device 0003:046D:4004.000C: input,hidraw7: USB HID v1.11 Keyboard [Logitech K360] on usb-0000:07:00.0-3.1/input2:2
+[    2.643696] input: Logitech M325 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0004/0003:046D:400A.000D/input/input41
+[    2.643856] logitech-hidpp-device 0003:046D:400A.000D: input,hidraw8: USB HID v1.11 Mouse [Logitech M325] on usb-0000:07:00.0-3.1/input2:3
+[    3.216347] input: HDA ATI HDMI HDMI/DP,pcm=3 as /devices/pci0000:00/0000:00:01.3/0000:05:00.0/sound/card0/input42
+[    3.216390] input: HDA ATI HDMI HDMI/DP,pcm=7 as /devices/pci0000:00/0000:00:01.3/0000:05:00.0/sound/card0/input43
+[    3.216423] input: HDA ATI HDMI HDMI/DP,pcm=8 as /devices/pci0000:00/0000:00:01.3/0000:05:00.0/sound/card0/input44
+[    3.216455] input: HDA ATI HDMI HDMI/DP,pcm=9 as /devices/pci0000:00/0000:00:01.3/0000:05:00.0/sound/card0/input45
+[    3.216493] input: HDA ATI HDMI HDMI/DP,pcm=10 as /devices/pci0000:00/0000:00:01.3/0000:05:00.0/sound/card0/input46
+[    3.216530] input: HDA ATI HDMI HDMI/DP,pcm=11 as /devices/pci0000:00/0000:00:01.3/0000:05:00.0/sound/card0/input47
+[    5.781620] rfkill: input handler disabled
+[  786.144142] logitech-djreceiver 0003:046D:C52B.0010: hiddev0,hidraw2: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:07:00.0-3.1/input2
+[  786.275233] input: Logitech T400 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0010/0003:046D:4026.0011/input/input48
+[  786.275593] logitech-hidpp-device 0003:046D:4026.0011: input,hidraw3: USB HID v1.11 Keyboard [Logitech T400] on usb-0000:07:00.0-3.1/input2:1
+[  786.281182] input: Logitech K360 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0010/0003:046D:4004.0012/input/input49
+[  786.281466] logitech-hidpp-device 0003:046D:4004.0012: input,hidraw4: USB HID v1.11 Keyboard [Logitech K360] on usb-0000:07:00.0-3.1/input2:2
+[  786.287136] input: Logitech M325 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.0010/0003:046D:400A.0013/input/input50
+[  786.287322] logitech-hidpp-device 0003:046D:400A.0013: input,hidraw5: USB HID v1.11 Mouse [Logitech M325] on usb-0000:07:00.0-3.1/input2:3
+[  786.746459] logitech-djreceiver 0003:046D:C52B.0016: hiddev1,hidraw6: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:07:00.0-3.4/input2
+[  786.884959] input: Logitech M510 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.4/5-3.4:1.2/0003:046D:C52B.0016/0003:046D:4051.0017/input/input51
+[  786.885074] logitech-hidpp-device 0003:046D:4051.0017: input,hidraw7: USB HID v1.11 Mouse [Logitech M510] on usb-0000:07:00.0-3.4/input2:1
+[  786.890973] input: Logitech K750 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.4/5-3.4:1.2/0003:046D:C52B.0016/0003:046D:400F.0018/input/input52
+[  786.891104] logitech-hidpp-device 0003:046D:400F.0018: input,hidraw8: USB HID v1.11 Keyboard [Logitech K750] on usb-0000:07:00.0-3.4/input2:2
+[  792.589574] logitech-djreceiver 0003:046D:C52B.001B: hiddev0,hidraw2: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:07:00.0-3.1/input2
+[  792.722842] input: Logitech T400 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.001B/0003:046D:4026.001C/input/input53
+[  792.723231] logitech-hidpp-device 0003:046D:4026.001C: input,hidraw3: USB HID v1.11 Keyboard [Logitech T400] on usb-0000:07:00.0-3.1/input2:1
+[  792.728848] input: Logitech K360 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.001B/0003:046D:4004.001D/input/input54
+[  792.729245] logitech-hidpp-device 0003:046D:4004.001D: input,hidraw4: USB HID v1.11 Keyboard [Logitech K360] on usb-0000:07:00.0-3.1/input2:2
+[  792.736776] input: Logitech M325 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.1/5-3.1:1.2/0003:046D:C52B.001B/0003:046D:400A.001E/input/input55
+[  792.737015] logitech-hidpp-device 0003:046D:400A.001E: input,hidraw5: USB HID v1.11 Mouse [Logitech M325] on usb-0000:07:00.0-3.1/input2:3
+[  793.194712] logitech-djreceiver 0003:046D:C52B.0021: hiddev1,hidraw6: USB HID v1.11 Device [Logitech USB Receiver] on usb-0000:07:00.0-3.4/input2
+[  793.478585] input: Logitech M510 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.4/5-3.4:1.2/0003:046D:C52B.0021/0003:046D:4051.0022/input/input56
+[  793.478711] logitech-hidpp-device 0003:046D:4051.0022: input,hidraw7: USB HID v1.11 Mouse [Logitech M510] on usb-0000:07:00.0-3.4/input2:1
+[  793.484590] input: Logitech K750 as /devices/pci0000:00/0000:00:01.5/0000:07:00.0/usb5/5-3/5-3.4/5-3.4:1.2/0003:046D:C52B.0021/0003:046D:400F.0023/input/input57
+[  793.484704] logitech-hidpp-device 0003:046D:400F.0023: input,hidraw8: USB HID v1.11 Keyboard [Logitech K750] on usb-0000:07:00.0-3.4/input2:2

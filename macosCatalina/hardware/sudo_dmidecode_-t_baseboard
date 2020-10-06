@@ -1,0 +1,18 @@
+# dmidecode 3.2
+Getting SMBIOS data from sysfs.
+SMBIOS 2.8 present.
+
+Handle 0x0200, DMI type 2, 15 bytes
+Base Board Information
+	Manufacturer: QEMU
+	Product Name: Standard PC (Q35 + ICH9, 2009)
+	Version: pc-q35-4.2
+	Serial Number: Not Specified
+	Asset Tag: Not Specified
+	Features:
+		Board is a hosting board
+	Location In Chassis: Not Specified
+	Chassis Handle: 0x0300
+	Type: Motherboard
+	Contained Object Handles: 0
+
