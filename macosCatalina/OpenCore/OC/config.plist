@@ -372,9 +372,9 @@
 		<key>Emulate</key>
 		<dict>
 			<key>Cpuid1Data</key>
-			<data></data>
+			<data>VAYFAAAAAAAAAAAAAAAAAA==</data>
 			<key>Cpuid1Mask</key>
-			<data></data>
+			<data>////AAAAAAAAAAAAAAAAAA==</data>
 		</dict>
 		<key>Force</key>
 		<array>
@@ -481,7 +481,7 @@
 			<key>DisableRtcChecksum</key>
 			<false/>
 			<key>DummyPowerManagement</key>
-			<false/>
+			<true/>
 			<key>ExternalDiskIcons</key>
 			<false/>
 			<key>IncreasePciBarSize</key>
@@ -532,7 +532,7 @@
 			<key>TakeoffDelay</key>
 			<integer>0</integer>
 			<key>Timeout</key>
-			<integer>5</integer>
+			<integer>10</integer>
 		</dict>
 		<key>Debug</key>
 		<dict>
@@ -554,22 +554,7 @@
 			<integer>3</integer>
 		</dict>
 		<key>Entries</key>
-		<array>
-			<dict>
-				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<false/>
-				<key>Comment</key>
-				<string>Not signed for security reasons</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Name</key>
-				<string>CustomOS</string>
-				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
-			</dict>
-		</array>
+		<array/>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -757,8 +742,8 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
-			<string>HfsPlus.efi</string>
 			<string>OpenRuntime.efi</string>
+			<string>HfsPlus.efi</string>
 		</array>
 		<key>Input</key>
 		<dict>
@@ -777,7 +762,7 @@
 			<key>PointerSupport</key>
 			<false/>
 			<key>PointerSupportMode</key>
-			<string></string>
+			<string>ASUS</string>
 			<key>TimerResolution</key>
 			<integer>50000</integer>
 		</dict>
