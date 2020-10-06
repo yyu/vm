@@ -1,0 +1,22 @@
+[03:00:25]yy@vlu:~/___$ sudo fdisk -l /dev/sda
+[sudo] password for yy: 
+Disk /dev/sda: 1 GiB, 1073741824 bytes, 2097152 sectors
+Disk model: QEMU HARDDISK   
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: A6E5685A-0FD0-4F71-8942-FF2B8CE30E12
+
+Device     Start     End Sectors  Size Type
+/dev/sda1   2048 2097118 2095071 1023M Microsoft basic data
+
+
+[03:04:09]yy@vlu:~/___$ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda      8:0    0    1G  0 disk 
+└─sda1   8:1    0 1023M  0 part /media/yy/OPENCORE
+sr0     11:0    1 1024M  0 rom  
+vda    252:0    0   40G  0 disk 
+├─vda1 252:1    0  300M  0 part /boot/efi
+└─vda2 252:2    0 39.7G  0 part /
