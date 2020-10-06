@@ -1,0 +1,197 @@
+OC
+├── com.apple.recovery.boot
+│   ├── BaseSystem.chunklist
+│   └── BaseSystem.dmg
+├── EFI
+│   ├── BOOT
+│   │   └── BOOTX64.efi
+│   └── OC
+│       ├── ACPI
+│       │   ├── SSDT-DTGP.aml
+│       │   ├── SSDT-EC.aml
+│       │   ├── SSDT-EHCI.aml
+│       │   └── SSDT-PLUG.aml
+│       ├── Bootstrap
+│       │   └── Bootstrap.efi
+│       ├── config.plist
+│       ├── Drivers
+│       │   └── OpenRuntime.efi
+│       ├── Kexts
+│       │   ├── AGPMInjector.kext
+│       │   │   └── Contents
+│       │   │       └── Info.plist
+│       │   ├── AppleALC.kext
+│       │   │   └── Contents
+│       │   │       ├── _CodeSignature
+│       │   │       │   └── CodeResources
+│       │   │       ├── Info.plist
+│       │   │       └── MacOS
+│       │   │           └── AppleALC
+│       │   ├── Lilu.kext
+│       │   │   └── Contents
+│       │   │       ├── Info.plist
+│       │   │       └── MacOS
+│       │   │           └── Lilu
+│       │   ├── MCEReporterDisabler.kext
+│       │   │   └── Contents
+│       │   │       └── Info.plist
+│       │   ├── SmallTreeIntel82576.kext
+│       │   │   └── Contents
+│       │   │       ├── _CodeSignature
+│       │   │       │   └── CodeResources
+│       │   │       ├── Info.plist
+│       │   │       ├── MacOS
+│       │   │       │   └── SmallTreeIntel82576
+│       │   │       └── Resources
+│       │   │           └── English.lproj
+│       │   │               └── InfoPlist.strings
+│       │   ├── USBPorts.kext
+│       │   │   └── Contents
+│       │   │       └── Info.plist
+│       │   ├── VirtualSMC.kext
+│       │   │   └── Contents
+│       │   │       ├── _CodeSignature
+│       │   │       │   └── CodeResources
+│       │   │       ├── Info.plist
+│       │   │       └── MacOS
+│       │   │           └── VirtualSMC
+│       │   └── WhateverGreen.kext
+│       │       └── Contents
+│       │           ├── _CodeSignature
+│       │           │   └── CodeResources
+│       │           ├── Info.plist
+│       │           └── MacOS
+│       │               └── WhateverGreen
+│       ├── OpenCore.efi
+│       ├── Resources
+│       │   ├── Audio
+│       │   ├── Font
+│       │   ├── Image
+│       │   └── Label
+│       └── Tools
+│           └── OpenShell.efi
+├── EFI_
+│   ├── BOOT
+│   │   └── BOOTx64.efi
+│   └── OC
+│       ├── ACPI
+│       │   ├── SSDT-EC-USBX.aml
+│       │   └── SSDT-PLUG.aml
+│       ├── Bootstrap
+│       │   └── Bootstrap.efi
+│       ├── config.plist
+│       ├── Drivers
+│       │   ├── HfsPlus.efi
+│       │   └── OpenRuntime.efi
+│       ├── Kexts
+│       │   ├── AppleALC.kext
+│       │   │   └── Contents
+│       │   │       ├── Info.plist
+│       │   │       └── MacOS
+│       │   │           └── AppleALC
+│       │   ├── AppleMCEReporterDisabler.kext
+│       │   │   └── Contents
+│       │   │       └── Info.plist
+│       │   ├── Lilu.kext
+│       │   │   └── Contents
+│       │   │       ├── Info.plist
+│       │   │       ├── MacOS
+│       │   │       │   └── Lilu
+│       │   │       └── Resources
+│       │   │           ├── Headers
+│       │   │           │   ├── capstone
+│       │   │           │   │   ├── arm64.h
+│       │   │           │   │   ├── arm.h
+│       │   │           │   │   ├── capstone.h
+│       │   │           │   │   ├── mips.h
+│       │   │           │   │   ├── platform.h
+│       │   │           │   │   ├── ppc.h
+│       │   │           │   │   ├── sparc.h
+│       │   │           │   │   ├── systemz.h
+│       │   │           │   │   ├── x86.h
+│       │   │           │   │   └── xcore.h
+│       │   │           │   ├── hde64.h
+│       │   │           │   ├── kern_api.hpp
+│       │   │           │   ├── kern_atomic.hpp
+│       │   │           │   ├── kern_compat.hpp
+│       │   │           │   ├── kern_compression.hpp
+│       │   │           │   ├── kern_config.hpp
+│       │   │           │   ├── kern_cpu.hpp
+│       │   │           │   ├── kern_crypto.hpp
+│       │   │           │   ├── kern_devinfo.hpp
+│       │   │           │   ├── kern_disasm.hpp
+│       │   │           │   ├── kern_efi.hpp
+│       │   │           │   ├── kern_file.hpp
+│       │   │           │   ├── kern_iokit.hpp
+│       │   │           │   ├── kern_mach.hpp
+│       │   │           │   ├── kern_nvram.hpp
+│       │   │           │   ├── kern_patcher.hpp
+│       │   │           │   ├── kern_policy.hpp
+│       │   │           │   ├── kern_rtc.hpp
+│       │   │           │   ├── kern_time.hpp
+│       │   │           │   ├── kern_user.hpp
+│       │   │           │   ├── kern_util.hpp
+│       │   │           │   └── plugin_start.hpp
+│       │   │           └── Library
+│       │   │               ├── LegacyIOService.h
+│       │   │               ├── LegacyLibkernMacros.h
+│       │   │               ├── libkmod.a
+│       │   │               ├── osfmk
+│       │   │               │   └── i386
+│       │   │               │       ├── cpu_topology.h
+│       │   │               │       └── pmCPU.h
+│       │   │               ├── plugin_start.cpp
+│       │   │               ├── security
+│       │   │               │   ├── _label.h
+│       │   │               │   ├── mac_framework.h
+│       │   │               │   └── mac_policy.h
+│       │   │               └── wrappers
+│       │   │                   ├── build.tool
+│       │   │                   ├── entry32.S
+│       │   │                   ├── entry64.S
+│       │   │                   └── wrappers.inc
+│       │   ├── SmallTreeIntel82576.kext
+│       │   │   └── Contents
+│       │   │       ├── _CodeSignature
+│       │   │       │   └── CodeResources
+│       │   │       ├── Info.plist
+│       │   │       ├── MacOS
+│       │   │       │   └── SmallTreeIntel82576
+│       │   │       └── Resources
+│       │   │           └── English.lproj
+│       │   │               └── InfoPlist.strings
+│       │   ├── VirtualSMC.kext
+│       │   │   └── Contents
+│       │   │       ├── Info.plist
+│       │   │       ├── MacOS
+│       │   │       │   └── VirtualSMC
+│       │   │       └── Resources
+│       │   │           └── VirtualSMCSDK
+│       │   │               ├── AppleSmcBridge.hpp
+│       │   │               ├── AppleSmc.h
+│       │   │               ├── kern_keyvalue.hpp
+│       │   │               ├── kern_smcinfo.hpp
+│       │   │               ├── kern_value.hpp
+│       │   │               └── kern_vsmcapi.hpp
+│       │   └── WhateverGreen.kext
+│       │       └── Contents
+│       │           ├── Info.plist
+│       │           └── MacOS
+│       │               └── WhateverGreen
+│       ├── OpenCore.efi
+│       ├── Resources
+│       │   ├── Audio
+│       │   ├── Font
+│       │   ├── Image
+│       │   └── Label
+│       └── Tools
+│           └── OpenShell.efi
+├── opencore-2020-10-05-061233.txt
+├── opencore-2020-10-05-061558.txt
+├── opencore-2020-10-05-111620.txt
+├── opencore-2020-10-05-111829.txt
+├── opencore-2020-10-05-111954.txt
+├── opencore-2020-10-06-070613.txt
+└── opencore-2020-10-06-070713.txt
+
+84 directories, 110 files

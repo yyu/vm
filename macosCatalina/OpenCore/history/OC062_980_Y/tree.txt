@@ -1,0 +1,71 @@
+OC062_980_Y
+└── EFI
+    ├── BOOT
+    │   └── BOOTX64.efi
+    └── OC
+        ├── ACPI
+        │   ├── SSDT-DTGP.aml
+        │   ├── SSDT-EC.aml
+        │   ├── SSDT-EHCI.aml
+        │   └── SSDT-PLUG.aml
+        ├── Bootstrap
+        │   └── Bootstrap.efi
+        ├── config.plist
+        ├── Drivers
+        │   └── OpenRuntime.efi
+        ├── Kexts
+        │   ├── AGPMInjector.kext
+        │   │   └── Contents
+        │   │       └── Info.plist
+        │   ├── AppleALC.kext
+        │   │   └── Contents
+        │   │       ├── _CodeSignature
+        │   │       │   └── CodeResources
+        │   │       ├── Info.plist
+        │   │       └── MacOS
+        │   │           └── AppleALC
+        │   ├── Lilu.kext
+        │   │   └── Contents
+        │   │       ├── Info.plist
+        │   │       └── MacOS
+        │   │           └── Lilu
+        │   ├── MCEReporterDisabler.kext
+        │   │   └── Contents
+        │   │       └── Info.plist
+        │   ├── SmallTreeIntel82576.kext
+        │   │   └── Contents
+        │   │       ├── _CodeSignature
+        │   │       │   └── CodeResources
+        │   │       ├── Info.plist
+        │   │       ├── MacOS
+        │   │       │   └── SmallTreeIntel82576
+        │   │       └── Resources
+        │   │           └── English.lproj
+        │   │               └── InfoPlist.strings
+        │   ├── USBPorts.kext
+        │   │   └── Contents
+        │   │       └── Info.plist
+        │   ├── VirtualSMC.kext
+        │   │   └── Contents
+        │   │       ├── _CodeSignature
+        │   │       │   └── CodeResources
+        │   │       ├── Info.plist
+        │   │       └── MacOS
+        │   │           └── VirtualSMC
+        │   └── WhateverGreen.kext
+        │       └── Contents
+        │           ├── _CodeSignature
+        │           │   └── CodeResources
+        │           ├── Info.plist
+        │           └── MacOS
+        │               └── WhateverGreen
+        ├── OpenCore.efi
+        ├── Resources
+        │   ├── Audio
+        │   ├── Font
+        │   ├── Image
+        │   └── Label
+        └── Tools
+            └── OpenShell.efi
+
+40 directories, 28 files
