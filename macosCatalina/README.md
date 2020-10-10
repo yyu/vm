@@ -1,4 +1,6 @@
 
+```
+
 ACPI
 * SSDT-DTGP.aml -- will boot without this
 * SSDT-EC.aml
@@ -415,3 +417,4 @@ Have a nice night!
 
 [23:02:38]yy@vubuntu:~/___$ 
 
+```
