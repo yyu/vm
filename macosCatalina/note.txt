@@ -269,6 +269,24 @@ ACPI
 
 
 
+First I used these:
+
+Type:         iMacPro1,1
+Serial:       C02D85YCHX87
+Board Serial: C02034108CDJG36JC
+SmUUID:       8AA4C467-6860-46C1-A772-0B559A6D41A8
+
+... and iMessage didn't let me log in, so I re-generated serials and found these:
+Type:         iMacPro1,1
+Serial:       C02Y4072HX87
+Board Serial: C02903403CDJG36CB
+SmUUID:       2B015DA3-07F5-4412-B986-4503E8ABF130
+
+
+
+
+
+
 [22:47:51]yy@vubuntu:~/___$ GenSMBIOS-master/GenSMBIOS.command 
   #######################################################
  #          Getting MacSerial Remote Version           #
