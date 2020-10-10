@@ -1,21 +1,22 @@
 <!--
 WARNING: THIS IS AN AUTO-GENERATED FILE. CHANGES TO IT ARE LIKELY TO BE
 OVERWRITTEN AND LOST. Changes to this xml configuration should be made using:
-  virsh edit macos
+  virsh edit mac
 or other application using the libvirt API.
 -->
 
 <domain type='kvm' xmlns:qemu='http://libvirt.org/schemas/domain/qemu/1.0'>
-  <name>macos</name>
-  <uuid>b57bd412-1835-490e-b18a-95019212b70d</uuid>
-  <title>macos</title>
+  <name>mac</name>
+  <uuid>e1342751-c32b-4b76-af1d-af55e6193d9d</uuid>
+  <title>mac on Radeon_I211_FL1100</title>
   <memory unit='KiB'>16777216</memory>
   <currentMemory unit='KiB'>16777216</currentMemory>
-  <vcpu placement='static'>16</vcpu>
+  <vcpu placement='static'>32</vcpu>
   <os>
     <type arch='x86_64' machine='pc-q35-4.2'>hvm</type>
     <loader readonly='yes' type='pflash'>/usr/share/OVMF/OVMF_CODE.fd</loader>
-    <nvram>/var/lib/libvirt/qemu/nvram/win10-gamer_VARS.fd</nvram>
+    <nvram>/var/lib/libvirt/qemu/nvram/mac_VARS.fd</nvram>
+    <boot dev='hd'/>
     <bootmenu enable='no'/>
   </os>
   <features>
@@ -24,7 +25,7 @@ or other application using the libvirt API.
   </features>
   <cpu mode='custom' match='exact' check='none'>
     <model fallback='forbid'>Penryn</model>
-    <topology sockets='1' cores='8' threads='2'/>
+    <topology sockets='1' cores='16' threads='2'/>
   </cpu>
   <clock offset='utc'>
     <timer name='rtc' tickpolicy='catchup'/>
@@ -37,17 +38,9 @@ or other application using the libvirt API.
   <devices>
     <emulator>/usr/bin/qemu-system-x86_64</emulator>
     <disk type='file' device='disk'>
-      <driver name='qemu' type='qcow2' cache='writeback' io='threads'/>
-      <source file='/home/yy/___/vm/mac.img'/>
-      <target dev='sdb' bus='sata'/>
-      <boot order='2'/>
-      <address type='drive' controller='0' bus='0' target='0' unit='1'/>
-    </disk>
-    <disk type='file' device='disk'>
       <driver name='qemu' type='qcow2'/>
-      <source file='/home/yy/___/vm/OpenCore.qcow2'/>
+      <source file='/home/yy/___/vm/mac.qcow2'/>
       <target dev='sdc' bus='sata'/>
-      <boot order='1'/>
       <address type='drive' controller='0' bus='0' target='0' unit='2'/>
     </disk>
     <controller type='sata' index='0'>
@@ -128,19 +121,19 @@ or other application using the libvirt API.
       <source>
         <address domain='0x0000' bus='0x2e' slot='0x00' function='0x0'/>
       </source>
-      <address type='pci' domain='0x0000' bus='0x04' slot='0x00' function='0x0'/>
+      <address type='pci' domain='0x0000' bus='0x03' slot='0x00' function='0x0' multifunction='on'/>
     </hostdev>
     <hostdev mode='subsystem' type='pci' managed='yes'>
       <source>
         <address domain='0x0000' bus='0x2e' slot='0x00' function='0x1'/>
       </source>
-      <address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0'/>
+      <address type='pci' domain='0x0000' bus='0x03' slot='0x00' function='0x1'/>
     </hostdev>
     <hostdev mode='subsystem' type='pci' managed='yes'>
       <source>
         <address domain='0x0000' bus='0x26' slot='0x00' function='0x0'/>
       </source>
-      <address type='pci' domain='0x0000' bus='0x03' slot='0x00' function='0x0'/>
+      <address type='pci' domain='0x0000' bus='0x05' slot='0x00' function='0x0'/>
     </hostdev>
     <hostdev mode='subsystem' type='pci' managed='yes'>
       <source>
