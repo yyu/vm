@@ -206,6 +206,11 @@
 				<key>built-in</key>
 				<data>AQ==</data>
 			</dict>
+			<key>PciRoot(0x1)/Pci(0x1,0x5)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>acpi-wake-type</key>
+				<data>AQ==</data>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict>
@@ -529,7 +534,7 @@
 			<key>ConsoleAttributes</key>
 			<integer>0</integer>
 			<key>HibernateMode</key>
-			<string>Auto</string>
+			<string>None</string>
 			<key>HideAuxiliary</key>
 			<false/>
 			<key>PickerAttributes</key>
@@ -634,7 +639,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100</string>
+				<string>-v keepsyms=1 swd_panic=1</string>
 				<key>run-efi-updater</key>
 				<string>No</string>
 				<key>csr-active-config</key>
