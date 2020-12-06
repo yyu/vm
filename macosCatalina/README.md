@@ -1,3 +1,18 @@
+## RX 580 problem
+
+It worked on Catalina but Big Sur only sees HDMI ports, DP cannot be used.
+
+Possible solutions:
+* [tonymacx86 - [Solved] Sapphire RX 580 Nitro+ SE | black screen on HDMI and DVI](https://www.tonymacx86.com/threads/solved-sapphire-rx-580-nitro-se-black-screen-on-hdmi-and-dvi.267078/)
+* [tonymacx86 - AMD Radeon Performance Enhanced SSDT](https://www.tonymacx86.com/threads/amd-radeon-performance-enhanced-ssdt.296555/)
+
+Links:
+* [google search - big sur rx580](https://www.google.com/search?q=big+sur+rx580&oq=big+sur+rx580&aqs=chrome..69i57j0i13.3767j1j7&sourceid=chrome&ie=UTF-8)
+* [google search - opencore videoports](https://www.google.com/search?q=opencore+videoports&oq=opencore+videoports&aqs=chrome..69i57j33i10i160.3603j0j7&sourceid=chrome&ie=UTF-8)
+* [InsanelyMac - Radeon RX 580 on macOS Catalina](https://www.insanelymac.com/forum/topic/344021-guide-radeon-rx-580-on-macos-catalina/)
+* [hackintosher - [Solved] Black Screen when booting into freshly installed Catalina 10.15.1](https://hackintosher.com/forums/thread/solved-black-screen-when-booting-into-freshly-installed-catalina-10-15-1.5605/)
+
+## Notes
 
 ```
 
